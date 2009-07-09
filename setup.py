@@ -17,7 +17,7 @@ setup(name='collective.sharerizer',
       keywords='plone',
       author='ONE/Northwest',
       author_email='jonb@onenw.org',
-      url='http://svn.plone.org/svn/plone/plone.example',
+      url='http://svn.plone.org/svn/collective/collective.sharerizer',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective'],
@@ -27,14 +27,4 @@ setup(name='collective.sharerizer',
           'setuptools',
           # -*- Extra requirements: -*-
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-
-      [distutils.setup_keywords]
-      paster_plugins = setuptools.dist:assert_string_list
-
-      [egg_info.writers]
-      paster_plugins.txt = setuptools.command.egg_info:write_arg
-      """,
-      paster_plugins = ["ZopeSkel"],
       )
