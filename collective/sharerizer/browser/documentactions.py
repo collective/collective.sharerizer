@@ -11,3 +11,10 @@ class DocumentActionsViewlet(base):
         portal_properties = getToolByName(self.context, 'portal_properties')
         s_props = getattr(portal_properties, 'sharerizer')
         return s_props.code
+        
+    def getShareIcon(self):
+        """Return the boolean for Document Action Icons"""
+        portal_properties = getToolByName(self.context, 'portal_properties')
+        s_props = getattr(portal_properties, 'sharerizer')
+        return s_props.daicon    
+    

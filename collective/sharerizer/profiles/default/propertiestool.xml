@@ -3,5 +3,6 @@
  <object name="sharerizer" meta_type="collective.sharerizer property sheet">
   <property name="title" type="string" purge="False">collective.sharerizer settings</property>
   <property name="code" type="text" purge="False"></property>
+  <property name="daicon" type="boolean" purge="False"></property>
  </object>
 </object>

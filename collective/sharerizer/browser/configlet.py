@@ -10,6 +10,7 @@ from Products.CMFDefault.formlib.schema import SchemaAdapterBase
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.CMFCore.utils import getToolByName
 
+
 class ISharerizerCode(Interface):
 
     code = schema.Text(title=u"Paste code here",
@@ -17,7 +18,13 @@ class ISharerizerCode(Interface):
                                    u" by the service.",
                        required=False,
                     )
-
+                    
+    daicon = schema.Bool(title=u"Display Document Actions Icons",
+                       description=u"Check to display Document Action Icons.",
+                       required=False,
+                    )
+                    
+                    
 class SharerizerCPAdapter(SchemaAdapterBase):
     adapts(IPloneSiteRoot)
     implements(ISharerizerCode)
@@ -33,7 +40,19 @@ class SharerizerCPAdapter(SchemaAdapterBase):
         return s_props.code
 
     code = property(getCode, setCode)
+    
+    def setIcon(self, value):
+        portal_properties = getToolByName(self.context, 'portal_properties')
+        s_props = getattr(portal_properties, 'sharerizer')
+        s_props.manage_changeProperties(daicon=value)
 
+    def getIcon(self):
+        portal_properties = getToolByName(self.context, 'portal_properties')
+        s_props = getattr(portal_properties, 'sharerizer')
+        return s_props.daicon
+
+    daicon = property(getIcon, setIcon)
+    
 class SharerizerCP(ControlPanelForm):
 
     form_fields = FormFields(ISharerizerCode)
