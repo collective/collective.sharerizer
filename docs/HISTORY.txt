@@ -5,4 +5,5 @@ Changelog
 ----------------
 
 * Initial release
+ - Added checkbox to enable document action icons [Josh Boese]
 
