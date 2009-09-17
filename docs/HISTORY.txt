@@ -4,6 +4,11 @@ Changelog
 1.0 - Unreleased
 ----------------
 
-* Initial release
- - Added checkbox to enable document action icons [Josh Boese]
+* Make sure our browser layer takes precedence over Plone default in Plone 3.3
+  [davisagli]
+
+* Added checkbox to enable document action icons
+  [Josh Boese]
+
+* Initial implementation
 
