@@ -12,7 +12,7 @@
                tal:attributes="href daction/url;
                                title daction/description">
                    <img tal:define="daicon view/getShareIcon"
-                        tal:condition="python: daicon and daction['icon']"
+                        tal:condition="python: daicon and daction.get('icon', '')"
                         tal:attributes="src daction/icon; alt daction/title; title daction/title"/>
                    <tal:action tal:content="daction/title" i18n:translate="">
                     Action name
