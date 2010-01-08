@@ -4,6 +4,10 @@ Changelog
 1.0 - Unreleased
 ----------------
 
+* Make sure the code is rendered even if there are no other active document
+  actions.
+  [davisagli]
+
 * Make sure our browser layer takes precedence over Plone default in Plone 3.3
   [davisagli]
 
@@ -11,4 +15,3 @@ Changelog
   [Josh Boese]
 
 * Initial implementation
-

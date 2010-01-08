@@ -8,7 +8,7 @@ from Testing import ZopeTestCase as ztc
 def load_zcml():
     import collective.sharerizer
     zcml.load_config('configure.zcml', collective.sharerizer)
-    ztc.installPackage('collective.weightedportlets')
+    ztc.installPackage('collective.sharerizer')
 
 load_zcml()
 ptc.setupPloneSite(products=['collective.sharerizer'])

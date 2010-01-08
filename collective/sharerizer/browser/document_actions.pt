@@ -1,7 +1,8 @@
 <div class="visualClear"><!-- --></div>
 <div i18n:domain="plone"
      class="documentActions">
-    <tal:docactions tal:condition="view/actions">
+    <tal:docactions tal:define="code view/getShareCode"
+                    tal:condition="python:view.actions or code">
 
     <h5 class="hiddenStructure" i18n:translate="heading_document_actions">Document Actions</h5>
 
@@ -21,7 +22,6 @@
         </li>
     </tal:actions>
         <li id="document-action-sharerizer" class="last-action"
-            tal:define="code view/getShareCode"
             tal:condition="code">
             <tal:code replace="structure code">
                 Code (as configured in the configlet) goes here
