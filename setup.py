@@ -4,7 +4,7 @@ version = '1.0'
 
 setup(name='collective.sharerizer',
       version=version,
-      description="A package to inject Web 2.0 style sharing buttons into a Plone 3.x's portal_actions.",
+      description="A package to inject Web 2.0 style sharing buttons into Plone's document_actions.",
       long_description=open("README.txt").read() + "\n" +
                        open("CHANGES.txt").read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
@@ -14,8 +14,8 @@ setup(name='collective.sharerizer',
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='plone',
-      author='ONE/Northwest',
-      author_email='jonb@onenw.org',
+      author='Groundwire',
+      author_email='jonb@groundwire.org',
       url='http://svn.plone.org/svn/collective/collective.sharerizer',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),

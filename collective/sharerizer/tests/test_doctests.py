@@ -9,7 +9,7 @@ def test_suite():
         # Demonstrate the main content types
         ztc.FunctionalDocFileSuite(
             'doctests.txt', package='collective.sharerizer.tests',
-            test_class=base.TestCase,
+            test_class=base.FunctionalTestCase,
             optionflags=doctest.REPORT_ONLY_FIRST_FAILURE |
                 doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS),
 
