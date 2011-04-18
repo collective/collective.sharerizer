@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '1.1dev'
+version = '1.1'
 
 setup(name='collective.sharerizer',
       version=version,
@@ -26,4 +26,8 @@ setup(name='collective.sharerizer',
           'setuptools',
           # -*- Extra requirements: -*-
       ],
+      entry_points="""
+      [z3c.autoinclude.plugin]
+      target = plone
+      """
       )

@@ -1,8 +1,14 @@
 Changelog
 =========
 
-1.0 - (2010-03-02)
-------------------
+1.1 (2011-04-18)
+----------------
+
+* Add z3c.autoinclude entry point.
+  [davisagli]
+
+1.0 (2010-03-02)
+----------------
 
 * Make sure the code is rendered even if there are no other active document
   actions.
