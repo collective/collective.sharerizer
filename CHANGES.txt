@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.2 (unreleased)
+----------------
+
+* Plone 4.1 compability added.
+  [timo]
+
 1.1 (2011-04-18)
 ----------------
 
