@@ -3,6 +3,7 @@ import doctest
 from Testing import ZopeTestCase as ztc
 from collective.sharerizer.tests import base
 
+
 def test_suite():
     return unittest.TestSuite([
 

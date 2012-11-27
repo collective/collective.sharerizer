@@ -13,8 +13,10 @@ def load_zcml():
 load_zcml()
 ptc.setupPloneSite(products=['collective.sharerizer'])
 
+
 class TestCase(ptc.PloneTestCase):
     """Test case class for doc tests"""
+
 
 class FunctionalTestCase(ptc.FunctionalTestCase):
     """Test case class used for functional (doc-)tests

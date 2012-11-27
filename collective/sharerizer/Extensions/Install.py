@@ -1,5 +1,6 @@
 from Products.CMFCore.utils import getToolByName
 
+
 def uninstall(portal, reinstall=False):
     """If we're not reinstalling remove cruft from portal (portal_properties
     and portal_controlpanel)

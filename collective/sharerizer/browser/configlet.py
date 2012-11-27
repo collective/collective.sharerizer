@@ -13,16 +13,18 @@ from Products.CMFCore.utils import getToolByName
 
 class ISharerizerCode(Interface):
 
-    code = schema.Text(title=u"Paste code here",
-                       description=u"Paste the complete code snippet provided"
-                                   u" by the service.",
-                       required=False,
-                    )
+    code = schema.Text(
+        title=u"Paste code here",
+        description=(u"Paste the complete code snippet provided"
+                     u" by the service."),
+        required=False,
+        )
 
-    daicon = schema.Bool(title=u"Display Document Actions Icons",
-                       description=u"Check to display Document Action Icons.",
-                       required=False,
-                    )
+    daicon = schema.Bool(
+        title=u"Display Document Actions Icons",
+        description=u"Check to display Document Action Icons.",
+        required=False,
+        )
 
     restrict = schema.Bool(
         title=u"Restrict types",
