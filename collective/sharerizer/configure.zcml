@@ -20,4 +20,13 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+   <genericsetup:upgradeStep
+      source="1.1"
+      destination="1.2"
+      title="Add settings to our properties"
+      description=""
+      profile="collective.sharerizer:default"
+      handler=".upgrades.add_settings"
+      />
+
 </configure>

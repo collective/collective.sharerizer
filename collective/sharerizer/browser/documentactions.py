@@ -10,6 +10,11 @@ class DocumentActionsViewlet(base):
         """Return the javascript/html for sharing"""
         portal_properties = getToolByName(self.context, 'portal_properties')
         s_props = getattr(portal_properties, 'sharerizer')
+        # The default is to not restrict the portal_types where the
+        # code is shown.
+        if s_props.restrict:
+            if self.context.portal_type not in s_props.allowed_types:
+                return ''
         return s_props.code
         
     def getShareIcon(self):
