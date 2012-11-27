@@ -9,7 +9,7 @@
         name="plone.abovecontenttitle.documentactions"
         manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
         class=".documentactions.DocumentActionsViewlet"
-        permission="zope2.View" 
+        permission="zope2.View"
         layer="..interfaces.ISharerizerBrowserLayer"
         />
 

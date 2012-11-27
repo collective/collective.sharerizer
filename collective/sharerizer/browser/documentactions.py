@@ -16,10 +16,10 @@ class DocumentActionsViewlet(base):
             if self.context.portal_type not in s_props.allowed_types:
                 return ''
         return s_props.code
-        
+
     def getShareIcon(self):
         """Return the boolean for Document Action Icons"""
         portal_properties = getToolByName(self.context, 'portal_properties')
         s_props = getattr(portal_properties, 'sharerizer')
-        return s_props.daicon    
-    
+        return s_props.daicon
+

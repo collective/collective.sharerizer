@@ -18,12 +18,12 @@ class ISharerizerCode(Interface):
                                    u" by the service.",
                        required=False,
                     )
-                    
+
     daicon = schema.Bool(title=u"Display Document Actions Icons",
                        description=u"Check to display Document Action Icons.",
                        required=False,
                     )
-                    
+
     restrict = schema.Bool(
         title=u"Restrict types",
         description=u"Restrict the types for which the code is shown.",
@@ -37,8 +37,8 @@ class ISharerizerCode(Interface):
         required=False,
         value_type=schema.Choice(source='plone.app.vocabularies.PortalTypes'),
         )
-                    
-                    
+
+
 class SharerizerCPAdapter(SchemaAdapterBase):
     adapts(IPloneSiteRoot)
     implements(ISharerizerCode)
@@ -54,7 +54,7 @@ class SharerizerCPAdapter(SchemaAdapterBase):
         return s_props.code
 
     code = property(getCode, setCode)
-    
+
     def setIcon(self, value):
         portal_properties = getToolByName(self.context, 'portal_properties')
         s_props = getattr(portal_properties, 'sharerizer')
