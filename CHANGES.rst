@@ -4,7 +4,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Source code moved to
+  https://github.com/collective/collective.sharerizer
+  [maurits]
 
 
 1.3 (2012-11-27)
