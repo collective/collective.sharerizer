@@ -6,7 +6,7 @@ setup(name='collective.sharerizer',
       version=version,
       description="A package to inject Web 2.0 style sharing buttons into Plone's document_actions.",
       long_description=(open("README.txt").read() + "\n" +
-                        open("CHANGES.txt").read()),
+                        open("CHANGES.rst").read()),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
